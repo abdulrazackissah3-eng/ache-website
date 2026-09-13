@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript</title>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+
+    <script>
+        alert("Hello from JavaScript!");
+        let name = "Abdul";       // String
+let age = 20;             // Number
+let online = true;        // Boolean
+let nothing = null;       // Null
+let unknown;              // Undefined
+      let a = 10;
+let b = 5;
+
+console.log(a + b); // 15
+console.log(a - b); // 5
+console.log(a * b); // 50
+console.log(a / b); // 2
+console.log(a % b); // 0
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Test</h1>
+
+<script>
+    console.log("Hello World!");
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Hello</h1>
+
+<script>
+    document.getElementById("title").textContent = "Hello JavaScript!";
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Button</title>
+</head>
+
+<body>
+
+<h1 id="message">Press the button</h1>
+
+<button onclick="changeMessage()">
+    Click Me
+</button>
+
+<script>
+function changeMessage() {
+    document.getElementById("message").textContent =
+        "You clicked the button!";
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="message">Hello</h1>
+
+<button id="button">Click Me</button>
+
+<script>
+
+const button = document.getElementById("button");
+const message = document.getElementById("message");
+
+button.addEventListener("click", function () {
+    message.textContent = "Button clicked!";
+});
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="name" placeholder="Enter your name">
+
+<button id="button">Submit</button>
+
+<p id="result"></p>
+
+<script>
+
+const input = document.getElementById("name");
+const button = document.getElementById("button");
+const result = document.getElementById("result");
+
+button.addEventListener("click", function () {
+
+    result.textContent = `Hello ${input.value}!`;
+
+});
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+<h1>Simple Calculator</h1>
+
+<input id="number1" type="number" placeholder="First number">
+
+<input id="number2" type="number" placeholder="Second number">
+
+<button id="add">Add</button>
+
+<h2 id="result">Result: </h2>
+
+<script>
+
+const number1 = document.getElementById("number1");
+const number2 = document.getElementById("number2");
+const button = document.getElementById("add");
+const result = document.getElementById("result");
+
+button.addEventListener("click", function () {
+
+    const a = Number(number1.value);
+    const b = Number(number2.value);
+
+    result.textContent = `Result: ${a + b}`;
+
+});
+
+</script>
+
+  <script src="Tutorial.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+
+<h1 id="counter">0</h1>
+
+<button id="minus">−</button>
+<button id="plus">+</button>
+<button id="reset">Reset</button>
+
+<script>
+
+let count = 0;
+
+const counter = document.getElementById("counter");
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const reset = document.getElementById("reset");
+
+plus.addEventListener("click", () => {
+    count++;
+    counter.textContent = count;
+});
+
+minus.addEventListener("click", () => {
+    count--;
+    counter.textContent = count;
+});
+
+reset.addEventListener("click", () => {
+    count = 0;
+    counter.textContent = count;
+});
+
+</script>
+
+</body>
+</html>
